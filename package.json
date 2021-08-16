@@ -1,0 +1,24 @@
+{
+  "name": "pagamento_template",
+  "version": "1.0.0",
+  "description": "App para implementar snipets de código para realizar pagamentos usando o IUGU",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danrleypereira/iugu-pagamento.git"
+  },
+  "keywords": [
+    "react",
+    "pagamento",
+    "iugu"
+  ],
+  "author": "Danrley Pereira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danrleypereira/iugu-pagamento/issues"
+  },
+  "homepage": "https://github.com/danrleypereira/iugu-pagamento#readme"
+}
