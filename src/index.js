@@ -3,12 +3,14 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import App from "./App.jsx";
-// import "./styles.scss";
+import Main from "./DesignSystem.jsx";
+
 
 const appRouting = (
   <Router>
     <Switch>
-      <Route exact path="/" component={App} />
+      <Route exact path="/" component={Main} />
+      <Route exact path="/hello" component={App} />
     </Switch>
   </Router>
 );
