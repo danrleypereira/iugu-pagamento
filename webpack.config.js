@@ -7,11 +7,12 @@ const isDevMode = process.env.NODE_ENV === "development";
 module.exports = {
     context: path.resolve(__dirname, "src"),
     entry: [
+        'babel-polyfill',
         "webpack/hot/only-dev-server",
         "./index.js"
     ],
     output: {
-        filename: "bundle.js",
+        filename: "[name].[fullhash].js",
         path: path.resolve(__dirname, "dist"),
         publicPath: "/",
     },
@@ -20,8 +21,10 @@ module.exports = {
         {
             test: /\.(js|jsx)$/,
             exclude: /node_modules/,
+            enforce: 'pre',
             use: {
-                loader: 'babel-loader'
+                loader: 'babel-loader',
+                // loader: 'source-map-loader'
             }
         },
         {
@@ -83,12 +86,13 @@ module.exports = {
         }),
         new webpack.HotModuleReplacementPlugin(),
         new MiniCssExtractPlugin({
-            filename: '__[name]__.[fullhash:6].css'
+            filename: '__[name]__.[fullhash:8].css'
         })
     ],
     devServer: {
         contentBase: path.join(__dirname, "dist"),
         compress: true,
-        port: 3000
+        port: 3000,
+        historyApiFallback: true
     }
 }

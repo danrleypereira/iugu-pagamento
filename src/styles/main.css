@@ -15,6 +15,33 @@ body {
     background-color: var(--v-primaryColor);
 }
 
+img {
+    width: 500px;
+    height: 300px;
+}
+
 .test-variables {
     background-color: var(--v-secondaryColor);
 }
+
+/* .App {
+	width: 450px;
+	display: flex;
+	height: 70vh;
+	justify-content: space-around;
+	flex-direction: column;
+	background: #ffff;
+	border-radius: 10px;
+} */
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  button {
+    margin: 5px;
+  }
+  

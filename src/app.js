@@ -36,3 +36,26 @@ new WebpackDevServer(webpack(config), {
 
   console.log('Listening at http://localhost:3000/');
 });
+
+// const compiler = webpack({
+//   entry: ['whatwg-fetch', path.resolve(__dirname, 'js', 'app.js')], 
+//   module: {
+//     loaders: [
+//       {
+//         exclude: /node_modules/, 
+//         test: /\.js$/, 
+//         loader: 'babel',
+//       },
+//     ],
+//   },
+//   output: {filename: 'app.js', path: '/'}, 
+// });
+
+// const app = new WebpackDevServer(compiler, {
+//   contentBase: '/public/', 
+//   proxy: {'/graphql': `http://localhost:${GRAPHQL_PORT}`},
+//   publicPath: '/js/',
+//   stats: {colors: true}, 
+// });
+
+// app.use('/', express.static(path.resolve(__dirname, 'public')));

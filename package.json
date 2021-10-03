@@ -26,17 +26,26 @@
   },
   "homepage": "https://github.com/danrleypereira/iugu-pagamento#readme",
   "dependencies": {
+    "add": "^2.0.6",
+    "antd": "^4.16.13",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
+    "payment": "^2.4.6",
     "react": "^17.0.2",
+    "react-credit-cards": "^0.8.3",
     "react-dom": "^17.0.2",
+    "react-payment-card-component": "^0.2.1",
     "react-router-dom": "^5.2.0",
-    "react-transition-group": "^4.4.2"
+    "react-step-builder": "^2.0.10",
+    "react-transition-group": "^4.4.2",
+    "yarn": "^1.22.11"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
     "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
     "css-loader": "^6.2.0",
     "file-loader": "^6.2.0",
     "html-loader": "^2.1.2",

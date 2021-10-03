@@ -5,6 +5,7 @@ export default function Main() {
     <>
       <h1>Design System</h1>
       <p>Aqui vai vir a tela do Design System da Compuletra</p>
+      <a href="/hello">go to App.jsx</a>
     </>
   );
 }
